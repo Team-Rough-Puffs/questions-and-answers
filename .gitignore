@@ -26,3 +26,6 @@ dist/
 
 # CSV files
 *.csv
+
+# Database config file
+server/database/config.js
