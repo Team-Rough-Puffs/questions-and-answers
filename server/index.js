@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 app.get('/qa/questions', (req, res) => {
   db.getQuestionsForProduct(req.query.product_id, (error, data) => {
     if (error) {
-      res.status(500).send();
+      res.status(500).send(error);
     } else {
       res.status(200).send(data);
     }
@@ -25,7 +25,7 @@ app.get('/qa/questions', (req, res) => {
 app.get("/qa/questions/:question_id/answers", (req, res) => {
   db.getAnswersForQuestion(req.params.question_id, (error, data) => {
     if (error) {
-      res.status(500).send();
+      res.status(500).send(error);
     } else {
       res.status(200).send(data);
     }
