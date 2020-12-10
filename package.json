@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "nodemon server/index.js -w server",
-    "seed": "psql qna < schema.sql"
+    "seed": "psql questions_answers < schema.sql"
   },
   "dependencies": {
     "express": "^4.17.1",
