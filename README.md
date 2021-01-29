@@ -1,32 +1,13 @@
-# Project Name
+# Atelier System Design
 
-> Project description
+> This is a RESTful API designed to handle front-end requests for a Questions and Answers service. This service has been integrated with a front-end legacy codebase for an ecommerce retail storefront.
 
-## Related Projects
+## Technologies
 
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
+- Node.js
+- PostgreSQL
 
-## Table of Contents
-
-1. [Usage](#Usage)
-1. [Requirements](#requirements)
-1. [Development](#development)
-
-## Usage
-
-> Some usage instructions
-
-## Requirements
-
-An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
-
-- Node 6.13.0
-- etc
-
-## Development
+## Environment Setup
 
 ### Installing Dependencies
 
@@ -36,4 +17,3 @@ From within the root directory:
 npm install -g webpack
 npm install
 ```
-
