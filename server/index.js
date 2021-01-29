@@ -35,9 +35,14 @@ app.get("/qa/questions/:question_id/answers", (req, res) => {
 /* POST A NEW QUESTION */
 // HTTP endpoint: `http://3.21.164.220/qa/questions?product_id=${product_id}`
 app.post("/qa/questions", (req, res) => {
-  db.addQuestion(req.params.product_id, req.params.body, req.params.name, req.params.email, (error, data) => {
+  db.addQuestion(
+    req.params.product_id,
+    req.params.body,
+    req.params.name,
+    req.params.email,
+    (error, data) => {
     if (error) {
-      res.status(500).send();
+      res.status(500).send(error);
     } else {
       res.status(200).send(data);
     }
